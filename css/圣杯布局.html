@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: red;
+            height: 50px;
+        }
+
+        .float {
+            height: 80px;
+            float: left;
+        }
+
+        .container {
+            min-width: 1200px;
+            padding: 0 200px 0 200px;
+        }
+
+        .center {
+            width: 100%;
+            background-color: orange;
+        }
+
+        .left {
+            width: 200px;
+            background-color: yellow;
+            margin-left: -100%;
+            position: relative;
+            left: -200px;
+        }
+
+        .right {
+            width: 200px;
+            background-color: green;
+            margin-right: -200px;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .footer {
+            background-color: gray;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="container clearfix">
+        <div class="center float">center</div>
+        <div class="left float">left</div>
+        <div class="right float">right</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

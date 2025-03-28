@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            background-color: red;
+            height: 50px;
+        }
+
+        .float {
+            height: 80px;
+            float: left;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .center {
+            height: 80px;
+            margin: 0 200px 0 200px;
+            background-color: orange;
+        }
+
+        .left {
+            width: 200px;
+            background-color: yellow;
+            margin-left: -100%;
+        }
+
+        .right {
+            width: 200px;
+            background-color: green;
+            margin-left: -200px;
+        }
+
+        .footer {
+            clear: both;
+            background-color: gray;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">header</div>
+    <div class="container float">
+        <div class="center">center</div>
+    </div>
+    <div class="left float">left</div>
+    <div class="right float">right</div>
+    <div class="footer">footer</div>
+</body>
+
+</html>
